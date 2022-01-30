@@ -19,7 +19,7 @@ const questions = () => {
     {
       type: 'input',
       name: 'installation',
-      message: 'Installation',
+      message: 'Installation instructions:',
       validate: validate,
     },
     {
@@ -28,15 +28,46 @@ const questions = () => {
       message: 'Usage',
       validate: validate,
     },
+    {
+      type: 'checkbox',
+      name: 'languages',
+      message: 'What Languages/Frameworks were used?',
+      choices: [
+        'JavaScript',
+        'HTML',
+        'CSS',
+        'ES6',
+        'jQuery',
+        'Bootstrap',
+        'Node',
+      ],
+    },
+    {
+      type: 'input',
+      name: 'testing',
+      message: 'Provide testing procedures:',
+    },
+    {
+      type: 'input',
+      name: 'contributions',
+      message: 'Provide contributions details:',
+    },
+    {
+      type: 'list',
+      name: 'license',
+      message: 'License guidelines for this project',
+      choices: ['MIT', 'GNU', 'Apache', 'None'],
+      validate: validate,
+    },
   ]);
 };
 
-function validate(arg) {
+const validate = arg => {
   if (arg) return true;
   else {
     console.log('Please enter a valid input.');
     return false;
   }
-}
+};
 
 export default questions;
