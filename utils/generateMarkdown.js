@@ -25,13 +25,13 @@ const renderLicenseBadge = license => {
 const renderLicenseLink = license => {
   switch (license) {
     case 'MIT':
-      license = `[MIT license](https://choosealicense.com/licenses/mit/)`;
+      license = `[Link to MIT license](https://choosealicense.com/licenses/mit/)`;
       return license;
     case 'GNU':
-      license = `[GPL (GNU) license](https://choosealicense.com/licenses/gpl-3.0/)`;
+      license = `[Link to GPL (GNU) license](https://choosealicense.com/licenses/gpl-3.0/)`;
       return license;
     case 'Apache':
-      license = `[Apache 2.0 license](https://choosealicense.com/licenses/apache-2.0/)`;
+      license = `[Link to Apache 2.0 license](https://choosealicense.com/licenses/apache-2.0/)`;
       return license;
     default:
       license = '';
