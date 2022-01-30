@@ -69,21 +69,23 @@ const renderLicenseSection = license => {
 };
 
 const renderContributions = data => {
-  if (data.contributions) {
+  const { contributions } = data;
+  if (contributions) {
     return `<a name="contributions"></a>
   ## Contributions: 
-  ${data.contributions}
+  ${contributions}
     `;
-  } else return ``;
+  } else return '';
 };
 
 const renderTests = data => {
-  if (data.testing) {
+  const { testing } = data;
+  if (testing) {
     return `<a name="contributions"></a>
   ## Tests: 
-  ${data.testing}
+  ${testing}
     `;
-  } else return ``;
+  } else return '';
 };
 
 // Switch statement function
@@ -100,12 +102,9 @@ const generateMarkdown = dataObj => {
   * [ Installation ](#installation)
   * [ Usage ](#usage)
   * [ License ](#license)
-  ${data.testing != 0 ? '* [ Testing ](#testing)' : ''}
-  ${
-    data.contributions != 0
-      ? '* [ Contributions ](#contributions)'
-      : ''
-  }
+  ${data.testing ? '* [ Testing ](#testing)' : ''}
+  ${data.contributions ? '* [ Contributions ](#contributions)' : ''}
+  * [ Questions ](#questions)
   
   <a name="about"></a>
   ## About the project:
@@ -113,7 +112,7 @@ const generateMarkdown = dataObj => {
 
   <a name="installation"></a>
   ## Installation:
-  ${data.installation}
+    ${data.installation}
 
   <a name="usage"></a>
   ## Usage:
@@ -124,6 +123,11 @@ const generateMarkdown = dataObj => {
   ${renderTests(data)}
   
   ${renderContributions(data)}
+
+  <a name="questions"></a>
+  ## Questions:
+  Username: ${data.username} \n
+  E-Mail: ${data.email}
 
 
   `;

@@ -41,8 +41,19 @@ const questions = () => {
     {
       type: 'list',
       name: 'license',
-      message: 'License guidelines for this project',
+      message: 'License guidelines for this project (Required):',
       choices: ['MIT', 'GNU', 'Apache', 'None'],
+      validate: validate,
+    },
+    {
+      type: 'input',
+      name: 'username',
+      message: 'GitHub username (Required):',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Provide your e-mail address (Required):',
       validate: validate,
     },
   ]);
