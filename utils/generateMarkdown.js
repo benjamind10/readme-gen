@@ -36,25 +36,35 @@ const renderLicenseLink = license => {
   }
 };
 
-const renderLanguage = data => {
-  if (data.languages != 0) {
-    return `<a name="languages"></a>
-  ## Languages/Frameworks used:
-   ${data.languages.join(', ')}
-    `;
-  } else {
-    return ``;
-  }
-};
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = license => {
-  if (license === 'None') return ``;
-  else {
-    return `<a name="license"></a>
+  switch (license) {
+    case 'MIT':
+      let pickedLicense;
+      pickedLicense = `<a name="license"></a>
   ## License info:
-  ${renderLicenseBadge(license)} ${renderLicenseLink(license)}`;
+  A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. ${renderLicenseLink(
+    license
+  )}`;
+      return pickedLicense;
+    case 'GNU':
+      pickedLicense = `<a name="license"></a>
+  ## License info:
+  Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. ${renderLicenseLink(
+    license
+  )}`;
+      return pickedLicense;
+    case 'Apache':
+      pickedLicense = `<a name="license"></a>
+  ## License info:
+  A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code. ${renderLicenseLink(
+    license
+  )}`;
+      return pickedLicense;
+    default:
+      license = '';
+      return license;
   }
 };
 
@@ -83,14 +93,13 @@ const generateMarkdown = dataObj => {
   const { title, license, ...data } = dataObj;
 
   return `
-  # Title: ${title}
+  # Title: ${title} ${renderLicenseBadge(license)}
 
   ## Table of contents:
   * [ Description ](#about)
   * [ Installation ](#installation)
   * [ Usage ](#usage)
   * [ License ](#license)
-  ${data.languages != 0 ? '* [ Languages ](#languages)' : ''}
   ${data.testing != 0 ? '* [ Testing ](#testing)' : ''}
   ${
     data.contributions != 0
@@ -111,12 +120,11 @@ const generateMarkdown = dataObj => {
   ${data.usage}
 
   ${renderLicenseSection(license)}
+  
+  ${renderTests(data)}
+  
+  ${renderContributions(data)}
 
-  ${renderLanguage(dataObj)}
-
-  ${renderContributions(dataObj)}
-
-  ${renderTests(dataObj)}
 
   `;
 };

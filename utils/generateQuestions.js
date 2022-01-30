@@ -29,20 +29,6 @@ const questions = () => {
       validate: validate,
     },
     {
-      type: 'checkbox',
-      name: 'languages',
-      message: 'What Languages/Frameworks were used?',
-      choices: [
-        'JavaScript',
-        'HTML',
-        'CSS',
-        'ES6',
-        'jQuery',
-        'Bootstrap',
-        'Node',
-      ],
-    },
-    {
       type: 'input',
       name: 'testing',
       message: 'Provide testing procedures:',
