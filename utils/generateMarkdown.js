@@ -39,8 +39,8 @@ const renderLicenseLink = license => {
 const renderLanguage = data => {
   if (data.languages != 0) {
     return `<a name="languages"></a>
-    ## Languages/Frameworks used: 
-      ${data.languages.join(', ')}
+  ## Languages/Frameworks used:
+   ${data.languages.join(', ')}
     `;
   } else {
     return ``;
@@ -49,14 +49,32 @@ const renderLanguage = data => {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+const renderLicenseSection = license => {
   if (license === 'None') return ``;
   else {
     return `<a name="license"></a>
   ## License info:
   ${renderLicenseBadge(license)} ${renderLicenseLink(license)}`;
   }
-}
+};
+
+const renderContributions = data => {
+  if (data.contributions) {
+    return `<a name="contributions"></a>
+  ## Contributions: 
+  ${data.contributions}
+    `;
+  } else return ``;
+};
+
+const renderTests = data => {
+  if (data.testing) {
+    return `<a name="contributions"></a>
+  ## Tests: 
+  ${data.testing}
+    `;
+  } else return ``;
+};
 
 // Switch statement function
 
@@ -72,13 +90,13 @@ const generateMarkdown = dataObj => {
   * [ Installation ](#installation)
   * [ Usage ](#usage)
   * [ License ](#license)
-   ${data.languages != 0 ? '* [ Languages ](#languages)' : ''}
-   ${data.testing != 0 ? '* [ Testing ](#testing)' : ''}
-   ${
-     data.contributions != 0
-       ? '* [ Contributions ](#contributions)'
-       : ''
-   }
+  ${data.languages != 0 ? '* [ Languages ](#languages)' : ''}
+  ${data.testing != 0 ? '* [ Testing ](#testing)' : ''}
+  ${
+    data.contributions != 0
+      ? '* [ Contributions ](#contributions)'
+      : ''
+  }
   
   <a name="about"></a>
   ## About the project:
@@ -96,11 +114,9 @@ const generateMarkdown = dataObj => {
 
   ${renderLanguage(dataObj)}
 
+  ${renderContributions(dataObj)}
 
-
-
-
-
+  ${renderTests(dataObj)}
 
   `;
 };
