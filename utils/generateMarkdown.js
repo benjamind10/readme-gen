@@ -101,7 +101,7 @@ const generateMarkdown = dataObj => {
   * [ Description ](#about)
   * [ Installation ](#installation)
   * [ Usage ](#usage)
-  * [ License ](#license)
+  ${license === 'None' ? '' : '* [ License ](#license)'}
   ${data.testing ? '* [ Testing ](#testing)' : ''}
   ${data.contributions ? '* [ Contributions ](#contributions)' : ''}
   * [ Questions ](#questions)

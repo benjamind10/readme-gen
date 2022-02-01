@@ -1,40 +1,41 @@
 
-  # Title: Run Buddy ![License:](https://img.shields.io/badge/license-MIT-green)
+  # Title: adf 
 
   ## Table of contents:
   * [ Description ](#about)
   * [ Installation ](#installation)
   * [ Usage ](#usage)
-  * [ License ](#license)
   
+  * [ Testing ](#testing)
   
   * [ Questions ](#questions)
   
   <a name="about"></a>
   ## About the project:
-  landing page for running club
+  afd
 
   <a name="installation"></a>
   ## Installation:
-    Visit the deployed link:
+    asdf
 
   <a name="usage"></a>
   ## Usage:
-  Simple app to be able to contact the blog maker
+  asdf
 
-  <a name="license"></a>
-  ## License info:
-  A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. [Link to MIT license](https://choosealicense.com/licenses/mit/)
   
   
+  <a name="contributions"></a>
+  ## Tests: 
+  asf
+    
   
   
 
   <a name="questions"></a>
   ## Questions:
-  Username: benjamind10 
+  Username: adsfasdf 
 
-  E-Mail: ben@bytebug.io
+  E-Mail: asdf
 
 
   
