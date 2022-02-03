@@ -71,11 +71,8 @@ const renderLicenseSection = license => {
 const renderDemo = dataObj => {
   const { demo } = dataObj;
 
-  if (demo.length != 0) {
-    return `![demo]('../../assets/images/demo.gif')`;
-  } else {
-    return '';
-  }
+  if (demo) return `![demo](../assets/images/demo.gif)`;
+  else return '';
 };
 
 const renderContributions = data => {
@@ -124,7 +121,8 @@ const generateMarkdown = dataObj => {
 
   <a name="usage"></a>
   ## Usage:
-  ${data.usage} \n
+  ${data.usage} 
+
   ${renderDemo(dataObj)}
 
   ${renderLicenseSection(license)}
@@ -135,7 +133,8 @@ const generateMarkdown = dataObj => {
 
   <a name="questions"></a>
   ## Questions:
-  Username: ${data.username} \n
+  Username: ${data.username}
+
   E-Mail: ${data.email}
 
 

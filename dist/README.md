@@ -1,37 +1,40 @@
-# Title: Readme Gen v2.0
 
-## Table of contents:
+  # Title: Readme Gen v2.0 
 
-- [ Description ](#about)
-- [ Installation ](#installation)
-- [ Usage ](#usage)
+  ## Table of contents:
+  * [ Description ](#about)
+  * [ Installation ](#installation)
+  * [ Usage ](#usage)
+  
+  
+  
+  * [ Questions ](#questions)
+  
+  <a name="about"></a>
+  ## About the project:
+  Readme generator testing vesrion 2
 
-- [ Questions ](#questions)
-
-<a name="about"></a>
-
-## About the project:
-
-Readme generator testing vesrion 2
-
-<a name="installation"></a>
-
-## Installation:
-
+  <a name="installation"></a>
+  ## Installation:
     npm install
 
-<a name="usage"></a>
+  <a name="usage"></a>
+  ## Usage:
+  Run `npm app.js` 
 
-## Usage:
+  ![demo](../assets/images/demo.gif)
 
-Run `npm app.js`
+  
+  
+  
+  
+  
 
-![demo]('../../assets/images/demo.gif')
+  <a name="questions"></a>
+  ## Questions:
+  Username: benjamind10
 
-<a name="questions"></a>
+  E-Mail: ben@bytebug.io
 
-## Questions:
 
-Username: benjamind10
-
-E-Mail: ben@bytebug.io
+  

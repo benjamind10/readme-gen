@@ -3,7 +3,7 @@ module.exports = response = {
   about: 'Readme generator testing vesrion 2',
   installation: 'npm install',
   usage: 'Run `npm app.js`',
-  demo: 'demo.gif',
+  demo: true,
   testing: '',
   contributions: '',
   license: 'None',
