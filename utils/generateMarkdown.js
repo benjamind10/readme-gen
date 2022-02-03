@@ -68,6 +68,16 @@ const renderLicenseSection = license => {
   }
 };
 
+const renderDemo = dataObj => {
+  const { demo } = dataObj;
+
+  if (demo.length != 0) {
+    return `![demo]('../../assets/images/demo.gif')`;
+  } else {
+    return '';
+  }
+};
+
 const renderContributions = data => {
   const { contributions } = data;
   if (contributions) {
@@ -114,7 +124,8 @@ const generateMarkdown = dataObj => {
 
   <a name="usage"></a>
   ## Usage:
-  ${data.usage}
+  ${data.usage} \n
+  ${renderDemo(dataObj)}
 
   ${renderLicenseSection(license)}
   

@@ -30,7 +30,7 @@ const questions = () => {
     },
     {
       type: 'confirm',
-      name: 'demo gif',
+      name: 'demo',
       message: 'Option to add Demo GIF',
     },
     {
