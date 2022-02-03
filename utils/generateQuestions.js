@@ -29,6 +29,11 @@ const questions = () => {
       validate: validate,
     },
     {
+      type: 'confirm',
+      name: 'demo gif',
+      message: 'Option to add Demo GIF',
+    },
+    {
       type: 'input',
       name: 'testing',
       message: 'Provide testing procedures:',

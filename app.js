@@ -16,13 +16,14 @@ const writeFile = data => {
 
 // TODO: Create a function to initialize app
 function init() {
-  generateQuestions()
-    .then(responses => {
-      return generateMarkdown(responses);
-    })
-    .then(data => {
-      return writeFile(data);
-    });
+  generateMarkdown(obj);
+  //   generateQuestions()
+  //       return generateMarkdown(responses);
+  //     .then(responses => {
+  //     })
+  //     .then(data => {
+  //       return writeFile(data);
+  //     });
 }
 
 // Function call to initialize app
