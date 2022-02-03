@@ -1,40 +1,49 @@
+# Title: Readme Generator v1.0 ![License:](https://img.shields.io/badge/License-GPLv3-green.svg)
 
-  # Title: Run Buddy ![License:](https://img.shields.io/badge/license-MIT-green)
+## Table of contents:
 
-  ## Table of contents:
-  * [ Description ](#about)
-  * [ Installation ](#installation)
-  * [ Usage ](#usage)
-  * [ License ](#license)
-  
-  
-  * [ Questions ](#questions)
-  
-  <a name="about"></a>
-  ## About the project:
-  landing page for running club
+- [ Description ](#about)
+- [ Installation ](#installation)
+- [ Usage ](#usage)
+- [ License ](#license)
+- [ Testing ](#testing)
 
-  <a name="installation"></a>
-  ## Installation:
-    Visit the deployed link:
+- [ Questions ](#questions)
 
-  <a name="usage"></a>
-  ## Usage:
-  Simple app to be able to contact the blog maker
+<a name="about"></a>
 
-  <a name="license"></a>
-  ## License info:
-  A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. [Link to MIT license](https://choosealicense.com/licenses/mit/)
-  
-  
-  
-  
+## About the project:
 
-  <a name="questions"></a>
-  ## Questions:
-  Username: benjamind10 
+Professional readme generator made with nodejs. Created to facilitate the generation of a readme after a new project
 
-  E-Mail: ben@bytebug.io
+<a name="installation"></a>
 
+## Installation:
 
-  
+    npm install
+
+<a name="usage"></a>
+
+## Usage:
+
+Run `npm app.js` from the directory and answer the questions provided.
+
+<a name="license"></a>
+
+## License info:
+
+Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. [Link to GPL (GNU) license](https://choosealicense.com/licenses/gpl-3.0/)
+
+<a name="contributions"></a>
+
+## Tests:
+
+App uses Jest framework for testing
+
+<a name="questions"></a>
+
+## Questions:
+
+Username: benjamind10
+
+E-Mail: ben@bytebug.io

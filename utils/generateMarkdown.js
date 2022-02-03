@@ -39,9 +39,9 @@ const renderLicenseLink = license => {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = license => {
+  let pickedLicense;
   switch (license) {
     case 'MIT':
-      let pickedLicense;
       pickedLicense = `<a name="license"></a>
   ## License info:
   A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. ${renderLicenseLink(
@@ -88,8 +88,6 @@ const renderTests = data => {
   } else return '';
 };
 
-// Switch statement function
-
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = dataObj => {
   const { title, license, ...data } = dataObj;
@@ -101,7 +99,7 @@ const generateMarkdown = dataObj => {
   * [ Description ](#about)
   * [ Installation ](#installation)
   * [ Usage ](#usage)
-  * [ License ](#license)
+  ${license === 'None' ? '' : '* [ License ](#license)'}
   ${data.testing ? '* [ Testing ](#testing)' : ''}
   ${data.contributions ? '* [ Contributions ](#contributions)' : ''}
   * [ Questions ](#questions)
