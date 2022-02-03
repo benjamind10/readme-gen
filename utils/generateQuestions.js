@@ -1,4 +1,4 @@
-import inquirer from 'inquirer';
+const inquirer = require('inquirer');
 const prompt = inquirer.prompt;
 
 const questions = () => {
@@ -67,4 +67,4 @@ const validate = arg => {
   }
 };
 
-export default questions;
+module.exports = questions;

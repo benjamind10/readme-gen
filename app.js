@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-import fs from 'fs';
-import generateQuestions from './utils/generateQuestions.js';
-import generateMarkdown from './utils/generateMarkdown.js';
+const fs = require('fs');
+const generateQuestions = require('./utils/generateQuestions');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create a function to write README file
 const writeFile = data => {

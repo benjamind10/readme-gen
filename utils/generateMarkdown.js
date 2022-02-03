@@ -133,4 +133,4 @@ const generateMarkdown = dataObj => {
   `;
 };
 
-export default generateMarkdown;
+module.exports = generateMarkdown;
