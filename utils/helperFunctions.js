@@ -68,6 +68,7 @@ const renderLicenseSection = license => {
   }
 };
 
+// Additional helper functions
 const renderDemo = dataObj => {
   const { demo } = dataObj;
 
