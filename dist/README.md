@@ -5,13 +5,14 @@
   * [ Description ](#about)
   * [ Installation ](#installation)
   * [ Usage ](#usage)
+  * [ Languages ](#languages)
   
   
   
   * [ Questions ](#questions)
   
   <a name="about"></a>
-  ## About the project:
+  ## Description:
   Readme generator testing vesrion 2
 
   <a name="installation"></a>
@@ -23,6 +24,11 @@
   Run `npm app.js` 
 
   ![demo](../assets/images/demo.gif)
+  
+  <a name="languages"></a>
+  ## Languages: 
+    HTML, CSS, JavaScript
+    
 
   
   
@@ -32,7 +38,7 @@
 
   <a name="questions"></a>
   ## Questions:
-  Username: benjamind10
+  Username: <a href=https://github.com/benjamind10>benjamind10</a>
 
   E-Mail: ben@bytebug.io
 

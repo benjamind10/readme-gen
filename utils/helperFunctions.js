@@ -95,50 +95,21 @@ const renderTests = data => {
   } else return '';
 };
 
-// TODO: Create a function to generate markdown for README
-const generateMarkdown = dataObj => {
-  const { title, license, ...data } = dataObj;
-
-  return `
-  # Title: ${title} ${renderLicenseBadge(license)}
-
-  ## Table of contents:
-  * [ Description ](#about)
-  * [ Installation ](#installation)
-  * [ Usage ](#usage)
-  ${license === 'None' ? '' : '* [ License ](#license)'}
-  ${data.testing ? '* [ Testing ](#testing)' : ''}
-  ${data.contributions ? '* [ Contributions ](#contributions)' : ''}
-  * [ Questions ](#questions)
-  
-  <a name="about"></a>
-  ## About the project:
-  ${data.about}
-
-  <a name="installation"></a>
-  ## Installation:
-    ${data.installation}
-
-  <a name="usage"></a>
-  ## Usage:
-  ${data.usage} 
-
-  ${renderDemo(dataObj)}
-
-  ${renderLicenseSection(license)}
-  
-  ${renderTests(data)}
-  
-  ${renderContributions(data)}
-
-  <a name="questions"></a>
-  ## Questions:
-  Username: ${data.username}
-
-  E-Mail: ${data.email}
-
-
-  `;
+const renderLanguages = data => {
+  const { languages } = data;
+  if (languages) {
+    return `<a name="languages"></a>
+  ## Languages: 
+    ${languages.map(language => language).join(', ')}
+    `;
+  } else return '';
 };
 
-module.exports = generateMarkdown;
+module.exports = {
+  renderLicenseBadge,
+  renderLicenseSection,
+  renderDemo,
+  renderContributions,
+  renderTests,
+  renderLanguages,
+};

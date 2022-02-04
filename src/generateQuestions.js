@@ -34,6 +34,21 @@ const questions = () => {
       message: 'Option to add Demo GIF',
     },
     {
+      type: 'checkbox',
+      name: 'languages',
+      message:
+        'What languages/frameworks did you use: (Check all that apply)',
+      choices: [
+        'JavaScript',
+        'HTML',
+        'CSS',
+        'ES6',
+        'jQuery',
+        'Bootstrap',
+        'Node',
+      ],
+    },
+    {
       type: 'input',
       name: 'testing',
       message: 'Provide testing procedures:',
