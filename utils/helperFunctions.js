@@ -72,7 +72,7 @@ const renderLicenseSection = license => {
 const renderDemo = dataObj => {
   const { demo } = dataObj;
 
-  if (demo) return `![demo](../assets/images/demo.gif)`;
+  if (demo) return `![demo](./assets/images/demo.gif)`;
   else return '';
 };
 

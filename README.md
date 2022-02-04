@@ -1,10 +1,11 @@
-# Title: Readme Generator v1.0 ![License:](https://img.shields.io/badge/License-GPLv3-green.svg)
+# Title: Readme Generator V3 ![License:](https://img.shields.io/badge/License-GPLv3-green.svg)
 
 ## Table of contents:
 
 - [ Description ](#about)
 - [ Installation ](#installation)
 - [ Usage ](#usage)
+- [ Languages ](#languages)
 - [ License ](#license)
 - [ Testing ](#testing)
 
@@ -12,9 +13,9 @@
 
 <a name="about"></a>
 
-## About the project:
+## Description:
 
-Professional readme generator made with nodejs. Created to facilitate the generation of a readme after a new project
+Readme generator for projects made
 
 <a name="installation"></a>
 
@@ -26,7 +27,15 @@ Professional readme generator made with nodejs. Created to facilitate the genera
 
 ## Usage:
 
-Run `npm app.js` from the directory and answer the questions provided.
+Run `npm index.js` from the directory downloaded
+
+![demo](./assets/images/demo.gif)
+
+<a name="languages"></a>
+
+## Languages:
+
+    JavaScript, Node
 
 <a name="license"></a>
 
@@ -38,12 +47,12 @@ Permissions of this strong copyleft license are conditioned on making available 
 
 ## Tests:
 
-App uses Jest framework for testing
+App uses Jest Framework for tests
 
 <a name="questions"></a>
 
 ## Questions:
 
-Username: benjamind10
+Username: <a href=https://github.com/benjamind10>benjamind10</a>
 
 E-Mail: ben@bytebug.io
