@@ -1,19 +1,19 @@
 
-  # Title: Readme Generator v4 ![License:](https://img.shields.io/badge/License-GPLv3-green.svg)
+  # Title: Team Profile Generator 
 
   ## Table of contents:
   * [ Description ](#about)
   * [ Installation ](#installation)
   * [ Usage ](#usage)
   * [ Languages ](#languages)
-  * [ License ](#license)
+  
   * [ Testing ](#testing)
   * [ Contributions ](#contributions)
   * [ Questions ](#questions)
   
   <a name="about"></a>
   ## Description:
-  Readme generator for github projects
+  A team profile generator built with node and jest test framework
 
   <a name="installation"></a>
   ## Installation:
@@ -21,27 +21,25 @@
 
   <a name="usage"></a>
   ## Usage:
-  Run `npm index.js` and answer the questions prompted 
+  Run `npm index.js` in the directory where project was cloned and answer the prompted questions 
 
   
   
   <a name="languages"></a>
   ## Languages: 
-    JavaScript, Node
+    JavaScript, HTML, CSS, Node
     
 
-  <a name="license"></a>
-  ## License info:
-  Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. [Link to GPL (GNU) license](https://choosealicense.com/licenses/gpl-3.0/)
+  
   
   <a name="contributions"></a>
   ## Tests: 
-  App uses Jest for testing
+  App  uses Jest framework for testing procedures.
     
   
   <a name="contributions"></a>
   ## Contributions: 
-  To contribute please email 
+  If you would like to contribute please reach me by email in the questions section.
     
 
   <a name="questions"></a>
