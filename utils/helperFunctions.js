@@ -68,7 +68,7 @@ const renderLicenseSection = license => {
   }
 };
 
-// Additional helper functions
+// Additional render functions
 const renderDemo = dataObj => {
   const { demo } = dataObj;
 
@@ -106,6 +106,15 @@ const renderLanguages = data => {
   } else return '';
 };
 
+// Validate helper fn
+const validate = arg => {
+  if (arg) return true;
+  else {
+    console.log('Please enter a valid input.');
+    return false;
+  }
+};
+
 module.exports = {
   renderLicenseBadge,
   renderLicenseSection,
@@ -113,4 +122,5 @@ module.exports = {
   renderContributions,
   renderTests,
   renderLanguages,
+  validate,
 };

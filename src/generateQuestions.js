@@ -1,6 +1,9 @@
+// Import Dependencies
 const inquirer = require('inquirer');
 const prompt = inquirer.prompt;
+const { validate } = require('../utils/helperFunctions');
 
+// Questions function
 const questions = () => {
   // TODO: Create an array of questions for user input
   return prompt([
@@ -77,14 +80,6 @@ const questions = () => {
       validate: validate,
     },
   ]);
-};
-
-const validate = arg => {
-  if (arg) return true;
-  else {
-    console.log('Please enter a valid input.');
-    return false;
-  }
 };
 
 module.exports = questions;

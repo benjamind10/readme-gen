@@ -1,3 +1,4 @@
+// Import functions
 const {
   renderLicenseBadge,
   renderLicenseSection,

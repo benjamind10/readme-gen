@@ -1,5 +1,5 @@
 
-  # Title: Readme Generator V3 ![License:](https://img.shields.io/badge/License-GPLv3-green.svg)
+  # Title: Readme Generator v4 ![License:](https://img.shields.io/badge/License-GPLv3-green.svg)
 
   ## Table of contents:
   * [ Description ](#about)
@@ -8,12 +8,12 @@
   * [ Languages ](#languages)
   * [ License ](#license)
   * [ Testing ](#testing)
-  
+  * [ Contributions ](#contributions)
   * [ Questions ](#questions)
   
   <a name="about"></a>
   ## Description:
-  Readme generator for projects made
+  Readme generator for github projects
 
   <a name="installation"></a>
   ## Installation:
@@ -21,9 +21,9 @@
 
   <a name="usage"></a>
   ## Usage:
-  Run `npm index.js` from the directory downloaded 
+  Run `npm index.js` and answer the questions prompted 
 
-  ![demo](../assets/images/demo.gif)
+  
   
   <a name="languages"></a>
   ## Languages: 
@@ -36,10 +36,13 @@
   
   <a name="contributions"></a>
   ## Tests: 
-  App uses Jest Framework for tests
+  App uses Jest for testing
     
   
-  
+  <a name="contributions"></a>
+  ## Contributions: 
+  To contribute please email 
+    
 
   <a name="questions"></a>
   ## Questions:
